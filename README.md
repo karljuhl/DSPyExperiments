@@ -1,5 +1,5 @@
 <p align="center">
-  <img align="center" src="docs/images/DSPy8.png" width="460px" />
+  <img align="center" src="/DSPy8.png" width="460px" />
 </p>
 <p align="left">
 
