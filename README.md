@@ -1,3 +1,8 @@
+
+<p align="center">
+  <p>This is not the official DSPy project from StanfordNLP find that repo here: <img align="center" src="https://colab.research.google.com/assets/colab-badge.svg" />]([https://colab.research.google.com/drive/1AI4ljnwjqpUtSXNQfD6msFvVV094owKu?usp=sharing](https://github.com/stanfordnlp/dspy)) </p>
+</p>
+
 <p align="center">
   <img align="center" src="/DSPy8.png" width="460px" />
 </p>
