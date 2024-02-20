@@ -1,6 +1,6 @@
 
 <p align="center">
-  <p>This is not the official DSPy project from StanfordNLP find that repo here: <img align="center" src="./logo_stanford_nlp" href=https://github.com/stanfordnlp/dspy /> </p>
+  <subtitle>This is not the official DSPy project from StanfordNLP find that repo here: <img align="center" src="./logo_stanford_nlp" href=https://github.com/stanfordnlp/dspy /> </subtitle>
 </p>
 
 <p align="center">
