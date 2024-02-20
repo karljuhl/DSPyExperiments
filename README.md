@@ -18,7 +18,7 @@ To make this more systematic and much more powerful, **DSPy** does two things. F
 
 ### Table of Contents
 
-If you need help thinking about your task, we recently created a [Discord server](https://discord.gg/VzS6RHHK6F) for the community.
+If you need help thinking about your task, the newly create [Discord server](https://discord.gg/VzS6RHHK6F) for the community is pretty great.
 
 1. **[Installation](#1-installation)**
 1. **[Experiments](#2-experiments)**
@@ -35,8 +35,6 @@ All you need is:
 ```
 pip install dspy-ai
 ```
-
-Or open our intro notebook in Google Colab: [<img align="center" src="https://colab.research.google.com/assets/colab-badge.svg" />](https://colab.research.google.com/github/stanfordnlp/dspy/blob/main/intro.ipynb)
 
 By default, DSPy installs the latest `openai` from pip. However, if you install old version before OpenAI changed their API `openai~=0.28.1`, the library will use that just fine. Both are supported.
 
