@@ -16,18 +16,17 @@ To make this more systematic and much more powerful, **DSPy** does two things. F
 
 **DSPy** can routinely teach powerful models like `GPT-3.5` or `GPT-4` and local models like `T5-base` or `Llama2-13b` to be much more reliable at tasks, i.e. having higher quality and/or avoiding specific failure patterns. **DSPy** optimizers will "compile" the _same_ program into _different_ instructions, few-shot prompts, and/or weight updates (finetunes) for each LM. This is a new paradigm in which LMs and their prompts fade into the background as optimizable pieces of a larger system that can learn from data. **tldr;** less prompting, higher scores, and a more systematic approach to solving hard tasks with LMs.
 
-<!--
 ### Table of Contents
 
 If you need help thinking about your task, we recently created a [Discord server](https://discord.gg/VzS6RHHK6F) for the community.
 
 1. **[Installation](#1-installation)**
-1. **[Tutorials & Documentation](#2-documentation)**
+1. **[Experiments](#2-Experiments)**
+2. **[Documentation]()**
 1. **[Framework Syntax](#3-syntax-youre-in-charge-of-the-workflowits-free-form-python-code)**
 1. **[Compiling: Two Powerful Concepts](#4-two-powerful-concepts-signatures--teleprompters)**
 1. **[FAQ: Is DSPy right for me?](#5-faq-is-dspy-right-for-me)**
 
--->
 
 ## 1) Installation
 
@@ -47,13 +46,9 @@ For the optional Pinecone, Qdrant, [chromadb](https://github.com/chroma-core/chr
 pip install dspy-ai[pinecone]  # or [qdrant] or [chromadb] or [marqo] or [mongodb]
 ```
 
-## 2) Documentation
+## 2) Experiments
 
-The DSPy documentation is divided into **tutorials** (step-by-step illustration of solving a task in DSPy), **guides** (how to use specific parts of the API), and **examples** (self-contained programs that illustrate usage).
-
-### A) Tutorials
-
-| **Level** |  **Tutorial** |  **Run in Colab** |  **Description** |
+| **Level** |  **Experiment** |  **Run in Colab** |  **Description** |
 | --- | -------------  |  -------------  |  -------------  | 
 | Beginner |  [**Evaluate Dialogflow CX Agent Answers**](intro.ipynb) | [<img align="center" src="https://colab.research.google.com/assets/colab-badge.svg" />](https://colab.research.google.com/drive/1AI4ljnwjqpUtSXNQfD6msFvVV094owKu?usp=sharing)  |  Basic eval of DFCX agent answers using DFCX-Scrapi and DSPy |
 <!--| Beginner | [**Minimal Working Example**](https://dspy-docs.vercel.app/docs/quick-start/minimal-example) | N/A | Builds and optimizes a very simple chain-of-thought program in DSPy for math question answering. Very short. |
@@ -73,29 +68,22 @@ The DSPy documentation is divided into **tutorials** (step-by-step illustration 
 - Interviews: [Weaviate Podcast in-person](https://www.youtube.com/watch?v=CDung1LnLbY), and you can find 6-7 other remote podcasts on YouTube from a few different perspectives/audiences.
 - **Tracing in DSPy** with Arize Phoenix: [Tutorial for tracing your prompts and the steps of your DSPy programs](https://colab.research.google.com/github/Arize-ai/phoenix/blob/main/tutorials/tracing/dspy_tracing_tutorial.ipynb)
 
-### B) Guides
+## 3) Documentation
 
 If you're new to DSPy, it's probably best to go in sequential order. You will probably refer to these guides frequently after that, e.g. to copy/paste snippets that you can edit for your own DSPy programs.
 
-
 1. **[Language Models](https://dspy-docs.vercel.app/docs/building-blocks/language_models)**
-
 2. **[Signatures](https://dspy-docs.vercel.app/docs/building-blocks/signatures)**
-
 3. **[Modules](https://dspy-docs.vercel.app/docs/building-blocks/modules)**
-
 5. **[Data](https://dspy-docs.vercel.app/docs/building-blocks/data)**
-
 5. **[Metrics](https://dspy-docs.vercel.app/docs/building-blocks/metrics)**
-
 4. **[Optimizers (formerly Teleprompters)](https://dspy-docs.vercel.app/docs/building-blocks/optimizers)**
-
 6. **[DSPy Assertions](examples/longformqa/longformqa_assertions.ipynb)**
-
 
 ### C) Examples
 
 The DSPy team believes complexity has to be justified. We take this seriously: we never release a complex tutorial (above) or example (below) _unless we can demonstrate empirically that this complexity has generally led to improved quality or cost._ This kind of rule is rarely enforced by other frameworks or docs, but you can count on it in DSPy examples.
+^^minds among mice^^
 
 There's a bunch of examples in the `examples/` directory and in the top-level directory. We welcome contributions!
 
