@@ -21,11 +21,11 @@ To make this more systematic and much more powerful, **DSPy** does two things. F
 If you need help thinking about your task, we recently created a [Discord server](https://discord.gg/VzS6RHHK6F) for the community.
 
 1. **[Installation](#1-installation)**
-1. **[Experiments](#2-Experiments)**
-2. **[Documentation]()**
-1. **[Framework Syntax](#3-syntax-youre-in-charge-of-the-workflowits-free-form-python-code)**
-1. **[Compiling: Two Powerful Concepts](#4-two-powerful-concepts-signatures--teleprompters)**
-1. **[FAQ: Is DSPy right for me?](#5-faq-is-dspy-right-for-me)**
+1. **[Experiments](#2-experiments)**
+2. **[Documentation](#3-documentation)**
+1. **[Framework Syntax](#4-syntax-youre-in-charge-of-the-workflowits-free-form-python-code)**
+1. **[Compiling: Two Powerful Concepts](#5-two-powerful-concepts-signatures--teleprompters)**
+1. **[FAQ: Is DSPy right for me?](#6-faq-is-dspy-right-for-me)**
 
 
 ## 1) Installation
@@ -80,9 +80,10 @@ If you're new to DSPy, it's probably best to go in sequential order. You will pr
 4. **[Optimizers (formerly Teleprompters)](https://dspy-docs.vercel.app/docs/building-blocks/optimizers)**
 6. **[DSPy Assertions](examples/longformqa/longformqa_assertions.ipynb)**
 
-### C) Examples
+### A) Examples
 
 The DSPy team believes complexity has to be justified. We take this seriously: we never release a complex tutorial (above) or example (below) _unless we can demonstrate empirically that this complexity has generally led to improved quality or cost._ This kind of rule is rarely enforced by other frameworks or docs, but you can count on it in DSPy examples.
+
 ^^minds among mice^^
 
 There's a bunch of examples in the `examples/` directory and in the top-level directory. We welcome contributions!
@@ -104,7 +105,7 @@ You can find other examples tweeted by [@lateinteraction](https://twitter.com/la
 
 There are also recent cool examples at [Weaviate's DSPy cookbook](https://github.com/weaviate/recipes/tree/main/integrations/dspy) by Connor Shorten. [See tutorial on YouTube](https://www.youtube.com/watch?v=CEuUG4Umfxs).
 
-## 3) Syntax: You're in charge of the workflow—it's free-form Python code!
+## 4) Syntax: You're in charge of the workflow—it's free-form Python code!
 
 **DSPy** hides tedious prompt engineering, but it cleanly exposes the important decisions you need to make: **[1]** what's your system design going to look like? **[2]** what are the important constraints on the behavior of your program?
 
@@ -146,7 +147,7 @@ The next section will discuss how to compile our simple `RAG` program. When we c
 If you later decide you need another step in your pipeline, just add another module and compile again. Maybe add a module that takes the chat history into account during search?
 
 
-## 4) Two Powerful Concepts: Signatures & Teleprompters
+## 5) Two Powerful Concepts: Signatures & Teleprompters
 
 **Note:** We will soon rename teleprompters to optimizers. This will not affect their functionality, but will simplify the terms used.
 
@@ -191,7 +192,7 @@ self.generate_answer = dspy.ChainOfThought(GenerateSearchQuery)
 You can optionally provide a `prefix` and/or `desc` key for each input or output field to refine or constraint the behavior of modules using your signature. The description of the sub-task itself is specified as the docstring (i.e., `"""Write a simple..."""`).
 
 
-#### 4.b) Asking **DSPy** to automatically optimize your program with `dspy.teleprompt.*`
+#### 5.b) Asking **DSPy** to automatically optimize your program with `dspy.teleprompt.*`
 
 After defining the `RAG` program, we can **compile** it. Compiling a program will update the parameters stored in each module. For large LMs, this is primarily in the form of creating and validating good demonstrations for inclusion in your prompt(s).
 
@@ -238,7 +239,7 @@ If we now use `compiled_rag`, it will invoke our LM with rich prompts with few-s
 
 
 
-## 5) FAQ: Is DSPy right for me?
+## 6) FAQ: Is DSPy right for me?
 
 The **DSPy** philosophy and abstraction differ significantly from other libraries and frameworks, so it's usually straightforward to decide when **DSPy** is (or isn't) the right framework for your usecase.
 
@@ -301,7 +302,9 @@ Key contributors and team members include **Arnav Singhvi**, **Krista Opsahl-Ong
 
 **DSPy** includes important contributions from **Rick Battle** and **Igor Kotenkov**. It reflects discussions with **Peter Zhong**, **Haoze He**, **Lisa Li**, **David Hall**, **Ashwin Paranjape**, **Heather Miller**, **Chris Manning**, **Percy Liang**, and many others.
 
-The **DSPy** logo is designed by **Chuyi Zhang**.
+The **DSPy** logo is designed by **Chuyi Zhang**. We changed it a tiny bit
+
+This repo is made for gaining a better understanding of the framework and understanding how and where it can be applied
 
 
 ## 📜 Citation & Reading More
