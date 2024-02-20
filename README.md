@@ -7,7 +7,7 @@
 <p align="left">
 
 
-## DSPyExperiments: Putting the __<i>experiments</i>__ in DSPy
+## DSPyExperiments: <i>Experimenting</i>---not thinking---Foundational Examples
 
 <!-- **Getting Started:** &nbsp; [<img align="center" src="https://colab.research.google.com/assets/colab-badge.svg" />](https://colab.research.google.com/github/stanfordnlp/dspy/blob/main/intro.ipynb) -->
 
