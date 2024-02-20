@@ -1,4 +1,4 @@
-<p align="right" style="font-size:9px;">Official DSPy repo: <img src="./logo_stanford_nlp_300_150.png" style="vertical-align:middle;" /> <a href="https://github.com/stanfordnlp/dspy">https://github.com/stanfordnlp/dspy</a></p>
+<p align="right" style="font-size:9px; ">Official DSPy repo: <img src="./logo_stanford_nlp_300_150.png" style="vertical-align:middle a href="https://github.com/stanfordnlp/dspy">https://github.com/stanfordnlp/dspy</a></p>
 
 
 <p align="center">
