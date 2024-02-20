@@ -4,8 +4,7 @@
 <p align="left">
 
 
-## DSPy: Experiments 
-<b>not affiliated</b>
+## DSPyExperiments 
 
 <!-- **Getting Started:** &nbsp; [<img align="center" src="https://colab.research.google.com/assets/colab-badge.svg" />](https://colab.research.google.com/github/stanfordnlp/dspy/blob/main/intro.ipynb) -->
 
