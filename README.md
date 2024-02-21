@@ -4,7 +4,7 @@
 <p align="left">
 
 
-## DSPyExperiments: <i>Experimenting</i>---not thinking---Foundational Examples
+## DSPyExperiments: <i>Experimenting</i>---not thinking---Foundational Tests
 
 <!-- **Getting Started:** &nbsp; [<img align="center" src="https://colab.research.google.com/assets/colab-badge.svg" />](https://colab.research.google.com/github/stanfordnlp/dspy/blob/main/intro.ipynb) -->
 
