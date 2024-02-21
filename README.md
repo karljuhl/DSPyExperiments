@@ -1,8 +1,3 @@
-<p align="right" style="font-size:9px; "><a href="https://github.com/stanfordnlp/dspy" style="vertical-align: bottom;">
-    <img src="./logo_stanford_nlp_300_150.png" style="vertical-align: bottom;" />
-</a></p>
-
-
 <p align="center">
   <img align="center" src="/DSPy8.png" width="460px" />
 </p>
@@ -55,10 +50,10 @@ pip install dspy-ai[pinecone]  # or [qdrant] or [chromadb] or [marqo] or [mongod
 
 |  **Experiment** |  **Run in Colab** |  **Description** |
 | -------------  |  -------------  |  -------------  | 
-|  [**Evaluate Dialogflow CX Agent Answers**](intro.ipynb) | [<img align="center" src="https://colab.research.google.com/assets/colab-badge.svg" />](https://colab.research.google.com/drive/1AI4ljnwjqpUtSXNQfD6msFvVV094owKu?usp=sharing)  |  Evaluation of DFCX agent answers |
-| [**Unstructured Document to Structured JSONL**]() | [<img align="center" src="https://colab.research.google.com/assets/colab-badge.svg" />](https://colab.research.google.com/drive/1-80TcXgv1L1au7HLg8-hr6efATGLoumi?usp=sharing) | Document-<i>mizer</i>  |
-<!--| [**Compiling for Tricky Tasks**](examples/nli/scone/scone.ipynb) | N/A | Teaches LMs to reason about logical statements and negation. Uses GPT-4 to bootstrap few-shot CoT demonstations for GPT-3.5. Establishes a state-of-the-art result on [ScoNe](https://arxiv.org/abs/2305.19426). Contributed by [Chris Potts](https://twitter.com/ChrisGPotts/status/1740033519446057077). |
-| [**Local Models & Custom Datasets**](skycamp2023.ipynb) | [<img align="center" src="https://colab.research.google.com/assets/colab-badge.svg" />](https://colab.research.google.com/drive/1-80TcXgv1L1au7HLg8-hr6efATGLoumi?usp=sharing) | Illustrates two different things together: how to use local models (Llama-2-13B in particular) and how to use your own data examples for training and development.
+|  [**Evaluate Dialogflow CX Agent Answers**]() | [<img align="center" src="https://colab.research.google.com/assets/colab-badge.svg" />](https://colab.research.google.com/drive/1AI4ljnwjqpUtSXNQfD6msFvVV094owKu?usp=sharing)  |  Evaluation of DFCX agent answers |
+| [**Unstructured Document to Structured JSONL**]() | [<img align="center" src="https://colab.research.google.com/assets/colab-badge.svg" />](https://colab.research.google.com/drive/1-80TcXgv1L1au7HLg8-hr6efATGLoumi?usp=sharing) | Document-<i>mizer</i> [in-progress]  |
+| [**Semantic Routing**]() | [<img align="center" src="https://colab.research.google.com/assets/colab-badge.svg" />]() | Based on Rasa CALM concept, implemented in DSPy for DFCX |
+<!--| [**Local Models & Custom Datasets**](skycamp2023.ipynb) | [<img align="center" src="https://colab.research.google.com/assets/colab-badge.svg" />](https://colab.research.google.com/drive/1-80TcXgv1L1au7HLg8-hr6efATGLoumi?usp=sharing) | Illustrates two different things together: how to use local models (Llama-2-13B in particular) and how to use your own data examples for training and development.
 | [**The DSPy Paper**](https://arxiv.org/abs/2310.03714) | N/A | Sections 3, 5, 6, and 7 of the DSPy paper can be consumed as a tutorial. They include explained code snippets, results, and discussions of the abstractions and API.
 | [**DSPy Assertions**](https://arxiv.org/abs/2312.13382) | [<img align="center" src="https://colab.research.google.com/assets/colab-badge.svg" />](https://colab.research.google.com/github/stanfordnlp/dspy/blob/main/examples/longformqa/longformqa_assertions.ipynb) | Introduces example of applying DSPy Assertions while generating long-form responses to questions with citations. Presents comparative evaluation in both zero-shot and compiled settings.
 | [**Finetuning for Complex Programs**](https://twitter.com/lateinteraction/status/1712135660797317577) | [<img align="center" src="https://colab.research.google.com/assets/colab-badge.svg" />](https://colab.research.google.com/github/stanfordnlp/dspy/blob/main/examples/qa/hotpot/multihop_finetune.ipynb) | Teaches a local T5 model (770M) to do exceptionally well on HotPotQA. Uses only 200 labeled answers. Uses no hand-written prompts, no calls to OpenAI, and no labels for retrieval or reasoning.
